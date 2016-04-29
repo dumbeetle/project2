@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header>
+    <div>
+        <h1 class="nameAnimation" id="nameCol">S K E T C H </h1>
+        <p class="nameAnimation"> D B </p>
+        <a href="add.html"><img src="img/Question%20Shield-48.png" /> </a>
+        <a href="index.html"><img src="img/Home-48.png" /> </a>
+    </div>
+</header>
+<br>
+<br>
+<br>
+<h1>Memorer</h1>
+
+<div class="content">
+
+
+   <div>
+       <h2>Add Memory</h2>
+       <div id="map"></div>
+
+       <div id="locationInfoInput">
+           <input id="txtMemoryName" placeholder="Memory name..."/>
+           <button id="savePosition">Save memory</button>
+       </div>
+   </div>
+</div>
+
+<div id="container">
+
+    <div id="sketchWidget">
+        <canvas id="sketchpad" width="300" height="300"></canvas>
+        <div>
+            <input id="colorpicker" type="color"/>
+            <input id="sizepicker" type="range" max="15" min="3" value="5"/>
+            <button id="btnSave">Save Drawing</button>
+        </div>
+    </div>
+    <div id="drawingBrowser">
+        <div id="drawingShowcase"></div>
+        <div id="drawingListing"></div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="https://npmcdn.com/dexie/dist/dexie.min.js"></script>
+<script src="js/sketch.js"></script>
+<script src="js/main.js"></script>
+<script src="js/add.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAy5iY4NPfGuOsfeB0Xkw1BwDeJvPT9Myg&callback=initMap"
+        async defer></script>
+</body>
+</html>

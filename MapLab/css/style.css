@@ -1,0 +1,142 @@
+#map {
+    margin-top:60px;
+    height:400px;
+    width: 600px;
+    border-radius:10px;
+}
+
+* {
+    margin: 0;
+}
+
+html,body{
+    height:100%;
+}
+
+body {
+    font-family: sans-serif;
+}
+header img{
+    height:30px;
+    width:30px;
+    float:right;
+    margin-right: 40px;
+    margin-top: 8px;
+}
+
+#wrapper {
+    min-height: 400px;
+    padding: 0px;
+}
+
+header {
+    position:fixed;
+    z-index: 1;
+    margin: 0;
+    width:100%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.2);
+    float: left;
+}
+section {
+    padding-top:50px;
+    height:3000px;
+    width:100%;
+    background-color:#D8DAD3;
+
+}
+section:nth-child(odd){
+    background-color:#AD716E;
+}
+
+header h1 {
+    line-height: 50px;
+    display: inline;
+    font-family: serif;
+}
+
+header p {
+    line-height: 50px;
+    display: inline;
+}
+
+a:visited {
+    color: inherit;
+}
+
+footer{
+    clear:both;
+    margin: 0;
+    width:100%;
+    height: 25px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+footer img{
+    height:20px;
+    width:20px;
+    float:right;
+    margin-right: 50px;
+
+}
+.nameAnimation {
+    line-height: 50px;
+    left: -150px;
+    position: relative;
+    -webkit-animation-name: nameAnim;
+    -webkit-animation-duration: 4s;
+    animation-name: nameAnim;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#nameCol {
+    line-height: 50px;
+    color: rgba(0,0,0,0);
+    line-height: 50px;
+    left: 0px;
+    -webkit-animation-name: nameCol;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-duration: 4s;
+    animation-name: nameCol;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes nameCol {
+    from {
+        color: #818D92;
+    }
+    to {
+        color: black;
+    }
+}
+
+@keyframes nameCol {
+    from {
+        color: rgba(0,0,0,0);
+    }
+    to {
+        color: black;
+    }
+}
+
+@-webkit-keyframes nameAnim {
+    from {
+        left: -150px;
+    }
+    to {
+        left: 10px;
+    }
+}
+
+@keyframes nameAnim {
+    from {
+        left: -150px;
+    }
+    to {
+        left: 10px;
+    }
+}
